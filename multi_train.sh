@@ -1,0 +1,21 @@
+python multi_train.py \
+--batch_size 8 \
+--accum_iter 1 \
+--root 1 \
+--checkpoints_dir /data/chwang/Log/AtlasNet/0_multi \
+--cls_type multi_atlas \
+--gpu_ids 0 \
+--workers 8 \
+--print_freq 1 \
+--save_epoch_freq 5 \
+--lr 2e-4 \
+--lr_policy lambda_exp \
+--lr_decay 0.9 \
+--warmup_epochs 5 \
+--epoch_count 50 \
+--class_num 2 \
+--lambda_init 0.7 \
+--lda_sh 1 \
+--lda_dis 1 \
+--lda_rec 1 \
+--name MultiMoE_cnad
